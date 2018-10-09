@@ -1,3 +1,5 @@
+//OJæ≠µ‰÷ÆA+B
+
 #include<stdio.h>
 
 int main()
