@@ -1,5 +1,4 @@
-//OJ¾­µäÖ®A+B
-
+ï»¿//OJç»å…¸ä¹‹A+B
 #include<stdio.h>
 
 int main()
