@@ -18,10 +18,6 @@ int main()
             scanf("%d",&p[i][j]);
             if(j>0 && i>0)
                 p[i][j] = p[i][j] + p[i-1][j] + p[i][j-1] - p[i-1][j-1];
-            else if(j>0 && i==0)
-                p[i][j] = p[i][j] + p[i][j-1];
-            else if(i>0 && j==0)
-                p[i][j] = p[i][j] + p[i-1][j];
         }
     }
 
@@ -32,10 +28,6 @@ int main()
         {
             if(i == a-1 && j== b-1)
                 s = p[i][j];
-            else if(i == a-1 && j != b-1)
-                s = p[i][j] - p[i][j-b];
-            else if(i != a-1 && j == b-1)
-                s = p[i][j] - p[i-a][j];
             else
                 s = p[i][j] - p[i][j-b] - p[i-a][j] + p[i-a][j-b];
             if(m < s)
